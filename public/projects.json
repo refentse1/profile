@@ -1,0 +1,26 @@
+[
+    {
+        "organisaztion":"Flowstate",
+        "date": "Feb 2023 - Oct 2023",
+        "title": "Fullstack Developer",
+        "description": "Empowers users with real-time insights into appliance energy consumption and costs, allowing them to make informed energy-saving decisions and efficiently manage electricity usage.",
+        "stack":"ReactJs,NodeJs and ExpressJs, MongoDB, MQTT Messaging Protocol.",
+        "link":"https://github.com/orgs/Flow-State1/repositories"
+    },
+    {
+        "organisaztion":"Nutri-fits",
+        "date": "Jun 2022 - Nov 2022",
+        "title": "Fullstack Developer",
+        "description": "An application developed/designed with a sole purpose of recommending diet/dietary plan and daily exercise routines, to improve the healthy lives of humans/people.",
+        "stack":"ReactJs, Ionic Framework,Firebase",
+        "link":"https://github.com/refentse1/Nutri-fits"
+    },
+    {
+        "organisaztion":"Listing Site",
+        "date": "Mar 2022 - Jun 2022",
+        "title": "Fullstack Developer",
+        "description": "A platform for recruiters to advertise job vacancies, so that job seekers can browse through and find suitable jobs that meet with their field of profession",
+        "stack":"HTML5, CSS3, JavaScript, PHP, Apache server (Xampp) and MYSSQL",
+        "link":"https://github.com/refentse1/Listing_Site"
+      }
+  ]
