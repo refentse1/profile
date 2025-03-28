@@ -1,4 +1,4 @@
-import Image from '../../../public/HeroImage.jpg'
+import Image from '/HeroImage.jpg'
 import Type from '../../component/Typing/TypeComp';
 
 const HeroView = () => {

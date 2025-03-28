@@ -1,4 +1,4 @@
-import Projects from '../../../public/projects.json'
+import Projects from './projects.json'
 
 const Timeline = () => {
 
