@@ -1,0 +1,51 @@
+<div class="relative min-h-screen bg-gray-950 text-gray-100 overflow-hidden">
+  
+  <!-- Grid background as pseudo-element -->
+  <div class="grid-background-layer"></div>
+
+ <nav class="relative flex justify-between items-center px-8 py-3">
+  <span class="text-xl font-semibold">Refentse Makgoba</span>
+  
+  <!-- Desktop Menu -->
+  <div class="hidden md:flex gap-6">
+    <a routerLink="/" class="hover:text-white">Home</a>
+    <a routerLink="/about" class="hover:text-white">About</a>
+    <a routerLink="/projects" class="hover:text-white">Projects</a>
+    <a routerLink="/experience" class="hover:text-white">Experience</a>
+    <a routerLink="/contact" class="hover:text-white">Contact</a>
+  </div>
+
+  <!-- Mobile Menu Button -->
+  <button 
+    (click)="toggleMenu()" 
+    class="md:hidden flex flex-col gap-1.5 w-6 z-20"
+    aria-label="Toggle menu">
+    <span class="block h-0.5 w-full bg-gray-100 transition-all" 
+          [class.rotate-45]="isMenuOpen" 
+          [class.translate-y-2]="isMenuOpen"></span>
+    <span class="block h-0.5 w-full bg-gray-100 transition-all" 
+          [class.opacity-0]="isMenuOpen"></span>
+    <span class="block h-0.5 w-full bg-gray-100 transition-all" 
+          [class.-rotate-45]="isMenuOpen" 
+          [class.-translate-y-2]="isMenuOpen"></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu (moved outside nav) -->
+<div 
+  *ngIf="isMenuOpen"
+  class="md:hidden bg-gray-900 border-t border-gray-800 transition-all duration-300">
+  <div class="flex flex-col gap-4 px-8 py-6">
+    <a routerLink="/" (click)="closeMenu()" class="hover:text-white">Home</a>
+    <a routerLink="/about" (click)="closeMenu()" class="hover:text-white">About</a>
+    <a routerLink="/projects" (click)="closeMenu()" class="hover:text-white">Projects</a>
+    <a routerLink="/experience" (click)="closeMenu()" class="hover:text-white">Experience</a>
+    <a routerLink="/contact" (click)="closeMenu()" class="hover:text-white">Contact</a>
+  </div>
+</div>
+
+  <!-- Routed content -->
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>

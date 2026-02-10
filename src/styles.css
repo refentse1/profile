@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "tailwindcss";
+
+
+@keyframes grid-move {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 40px 40px, 40px 40px;
+  }
+}
+
+.grid-background-layer {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: grid-move 3s linear infinite;
+  pointer-events: none; /* This ensures clicks pass through to content below */
+  z-index: 0;
+}
